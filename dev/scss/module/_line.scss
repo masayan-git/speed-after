@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.line {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+
+  @include mq(md) {
+    width: rem(1280);
+  }
+  &__svg {
+    width: 100%;
+    position: absolute;
+    
+    &--content-sp {
+      left: 0;
+      top: rem(18);
+    }
+
+    &--content-pc {
+      @include mq(md) {
+        top: rem(-62);
+        left: 0;
+      }
+    }
+
+    &--works-sp {
+      right: 0;
+      top: rem(200);
+    }
+    &--overview-pc {
+      @include mq(md) {
+        right: rem(69);
+        top: rem(-148);
+        
+      }
+    }
+
+  }
+
+  &--content {
+
+    
+  }
+
+  &--works {
+
+    
+  }
+}

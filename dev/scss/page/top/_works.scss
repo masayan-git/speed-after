@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.works {
+  margin-top: rem(50);
+
+  @include mq(md) {
+    margin-top: rem(125);
+  }
+
+  
+
+}
+
+.swiper {
+  width: 100%;
+  
+  
+}
+
+.swiper-slide {
+
+  &.works-slide {
+
+    img {
+      object-fit: cover;
+      height: auto;
+      
+    }
+  }
+}
+
+
+
+.swiper-pagination-bullet {
+  background: #C4C4C4;
+  opacity: 1;
+  
+}
+
+.swiper-pagination-bullet-active {
+  background: #F9F871;
+}
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: auto;
+
+  @include mq(md) {
+    bottom: rem(-30);
+    left: rem(-21);
+  }
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: rem(2) rem(6);
+}

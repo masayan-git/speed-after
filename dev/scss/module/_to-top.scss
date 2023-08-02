@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.to-top {
+  display: block;
+  width: rem(45);
+  height: rem(45);
+  background-color: $white;
+  position: fixed;
+  right: rem(19);
+  bottom: rem(32);
+  z-index: 1100;
+  transition: .3s;
+  
+  @include mq(md) {
+    bottom: rem(31);
+
+    &:hover {
+      background-color: $content-color;
+      transition: .3s;
+      & .to-top__arrow {
+        border-top: 2px solid $white;
+        border-left: 2px solid $white;
+        transition: .3s;
+      }
+    }
+  }
+
+  &__arrow {
+    display: block;
+    width: rem(19);
+    height: rem(19);
+    border-top: 2px solid $black;
+    border-left: 2px solid $black;
+    position: absolute;
+    top: rem(18);
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    transition: .3s;
+  }
+}

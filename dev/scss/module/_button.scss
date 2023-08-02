@@ -1,0 +1,55 @@
+@use "global" as *;
+
+
+.button {
+  display: inline-block;
+  text-align: center;
+  font-size: rem(20);
+  font-weight: $normal;
+  width: 100%;
+  padding: rem(10) 0;
+  border: rem(1) solid $white;
+  background-color: $button-color;
+  position: relative;
+  z-index: 2;
+  letter-spacing: rem(1.6);
+
+  @include mq(md) {
+    padding: rem(17) 0;
+    font-size: rem(16);
+
+    &--contact {
+      font-size: rem(20);
+      padding: rem(14) 0;
+      letter-spacing: rem(2);
+
+    }
+
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      z-index: -1;
+      background-color: $white;
+      transition: .3s;
+      
+  
+    }
+  
+    &:hover {
+      opacity: 1;
+      color: $black;
+      &::before {
+        width: 100%;
+      }
+    }
+
+  }
+
+
+}

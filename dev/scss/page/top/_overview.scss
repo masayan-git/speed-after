@@ -1,0 +1,19 @@
+@use "global" as *;
+
+.overview {
+
+  margin-top: rem(71);
+
+  @include mq(md) {
+    margin-top: rem(226);
+    
+  }
+
+  &__image {
+
+    image {
+      object-fit: cover;
+    }
+  }
+}
+

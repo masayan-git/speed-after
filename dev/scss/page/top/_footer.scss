@@ -1,0 +1,111 @@
+@use "global" as *;
+
+.footer {
+  padding-top: rem(49);
+  padding-bottom: rem(50);
+
+  @include mq(md) {
+    padding-top: rem(32);
+    padding-bottom: rem(26);
+    padding-right: rem(32);
+    padding-left: rem(32);
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    @include mq(sp) {
+      flex-direction: column;
+      row-gap: rem(5);
+      justify-content: center;
+      
+    }
+
+    @include mq(md) {
+      justify-content: space-between;
+
+    }
+
+  }
+
+  &__title {
+    font-family: $title-font-family;
+    font-size: rem(20);
+    letter-spacing: rem(1);
+  }
+
+  &__title-link {
+
+  }
+
+  &__contents {
+    display: flex;
+    @include mq(sp) {
+      flex-direction: column;
+      row-gap: rem(7);
+      justify-content: center;
+      align-items: center;
+      letter-spacing: rem(1);
+    }
+
+    @include mq(md) {
+      column-gap: rem(32);
+      letter-spacing: rem(1.5);
+    }
+
+
+  }
+
+  &__list {
+
+  }
+
+  &__link {
+
+    @include mq(md) {
+      position: relative;
+      
+      &:hover {
+        opacity: 1;
+        transition: .3s;
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 100%;
+          height: rem(1);
+          background-color: $category-color;
+          position: absolute;
+          bottom: rem(-3);
+          left: 50%;
+          transform: translateX(-50%);
+          transition: .3s;
+        }
+      }
+    }
+  }
+
+  &__copy-container {
+    text-align: center;
+    margin-top: rem(26);
+    letter-spacing: rem(1);
+
+    @include mq(md) {
+      margin-top: rem(73);
+    }
+  }
+
+  &__copy {
+    font-size: rem(11);
+    font-weight: $normal;
+    span {
+      display: inline-block;
+      margin-left: rem(1);
+    }
+
+    @include mq(md) {
+      font-size: rem(15);
+    }
+   
+  }
+
+}
