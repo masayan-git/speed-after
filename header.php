@@ -22,7 +22,8 @@
   
 <header class="header">
   <div class="header__container">
-    <h1 class="header__title"><a href="" class="header__title-link">CodeUps</a></h1>
+    <!-- <h1 class="header__title"><a href="" class="header__title-link">CodeUps</a></h1> -->
+    <h1 class="header__title"><a href="" class="header__title-link">Test</a></h1>
     
     <nav class="header__nav" id="js-header">
       <ul class="header__list drawer-header__list">
