@@ -3,7 +3,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   var topBtn = $('#js-to-top');
   topBtn.hide();
-
    // ボタンの表示設定
    $(window).scroll(function () {
     if ($(this).scrollTop() > 70) {
