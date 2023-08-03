@@ -1,29 +1,25 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+  // ボタンの表示設定
+  const topBtn = document.querySelector('#js-to-top');
+  topBtn.style.display = "none";
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-
-  var topBtn = $('#js-to-top');
-  topBtn.hide();
-   // ボタンの表示設定
-   $(window).scroll(function () {
-    if ($(this).scrollTop() > 70) {
-      // 指定px以上のスクロールでボタンを表示
-      topBtn.fadeIn();
+  window.addEventListener('scroll', () => {
+    // 指定px以上のスクロールでボタンを表示
+    if (window.scrollY > 70) {
+      topBtn.style.display = "";
     } else {
       // 画面が指定pxより上ならボタンを非表示
-      topBtn.fadeOut();
+      topBtn.style.display = "none";
     }
   });
 
-  topBtn.on('click', function(){
-    $('body,html').animate({
-      scrollTop: 0
-    }, 300, 'swing');
-    return false;
+  topBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({top: 0, behavior: 'smooth'});
   });
 
-
-
-  let swipeOption = {
+  // Swiper
+  const swiper1 = new Swiper('.swiper-container', {
     loop: true,
     effect: 'fade',
     autoplay: {
@@ -35,55 +31,47 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       el: '.swiper-pagination',
       clickable: true,
     }
-  }
-  new Swiper('.swiper-container', swipeOption);
+  });
 
-
-  const swiper = new Swiper('.swiper', {
-    // Optional parameters
+  const swiper2 = new Swiper('.swiper', {
     direction: 'horizontal',
     loop: true,
-
     autoplay: {
       delay: 5000,
     },
-  
-    // If we need pagination
     pagination: {
       el: '.swiper-pagination',
     },
-
   });
 
-  
+  // ハンバーガーメニュー
+  const header = document.querySelector('#js-header');
+  const hamburger = document.querySelector('#js-hamburger');
+  const drawerBackground = document.querySelector('#js-drawer-background');
 
-  var $header = $('#js-header') 
-  var $hamburger = $('#js-hamburger')
-  var $drawerBackground = $('#js-drawer-background');
+  hamburger.addEventListener('click', (event) => {
+    header.classList.toggle('is-active');
+    hamburger.classList.toggle('is-active');
+    drawerBackground.classList.toggle('is-active');
+  });
+
+  drawerBackground.addEventListener('click', (event) => {
+    header.classList.remove('is-active');
+    hamburger.classList.remove('is-active');
+    drawerBackground.classList.remove('is-active');
+  });
+
+  // 1024px以上でハンバーガーメニューを強制非表示
   const mediaQueryPc = window.matchMedia("(min-width: 1024px)");
 
-  $('#js-hamburger').on('click', function(e) {
-    $header.toggleClass('is-active');
-    $hamburger.toggleClass('is-active');
-    $drawerBackground.toggleClass('is-active');
-  });
-
-  $('#js-drawer-background').on('click', function() {
-    $header.removeClass('is-active');
-    $hamburger.removeClass('is-active');
-    $drawerBackground.removeClass('is-active');
-  });
-
   const listener = (e) => {
-    if(mediaQueryPc.matches) {
-      $header.removeClass('is-active');
-      $hamburger.removeClass('is-active');
-      $drawerBackground.removeClass('is-active');
+    if(e.matches) {
+      header.classList.remove('is-active');
+      hamburger.classList.remove('is-active');
+      drawerBackground.classList.remove('is-active');
     } 
   };
 
   mediaQueryPc.addEventListener("change", listener);
-
   listener(mediaQueryPc);
-
 });

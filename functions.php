@@ -26,9 +26,6 @@ function my_script_init()
   // スタイルシートの読み込み
   wp_enqueue_style('my', get_template_directory_uri() . '/css/styles.css', array(), '1.0.0', 'all');
 
-  // jQueryの読み込み
-  wp_enqueue_script('jquery');
-
   // swiper scriptの読み込み
   wp_enqueue_script('swiper-script', 'https://unpkg.com/swiper@8/swiper-bundle.min.js', array(), null, true);
 
@@ -36,3 +33,10 @@ function my_script_init()
   wp_enqueue_script('my', get_template_directory_uri() . '/js/script.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
+
+function dequeue_jquery() { 
+  if (!is_admin()) {
+      wp_deregister_script('jquery');
+  }
+}
+add_action('wp_enqueue_scripts', 'dequeue_jquery');
