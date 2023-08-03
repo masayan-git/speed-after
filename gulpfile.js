@@ -13,6 +13,7 @@ const postcss = require("gulp-postcss");
 const presetEnv = require("postcss-preset-env");
 const browserSync = require("browser-sync").create();
 
+const cssnano = require('cssnano');
 function styles() {
   return src("dev/scss/**/*.scss")
     .pipe(sourcemaps.init())
@@ -28,6 +29,7 @@ function styles() {
     )
     .pipe(postcss([presetEnv({ stage: 3 })]))
     .pipe(autoprefixer())
+    .pipe(postcss([cssnano()]))
     .pipe(sourcemaps.write("./"))
     .pipe(dest("./css"))
     .pipe(browserSync.stream());
