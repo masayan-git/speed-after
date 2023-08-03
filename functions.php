@@ -34,6 +34,7 @@ function my_script_init()
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
+// jQueryを管理画面以外で無効化
 function dequeue_jquery() { 
   if (!is_admin()) {
       wp_deregister_script('jquery');
