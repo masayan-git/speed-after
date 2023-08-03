@@ -5,6 +5,7 @@ const plumber = require("gulp-plumber");
 const autoprefixer = require("gulp-autoprefixer");
 const sourcemaps = require("gulp-sourcemaps");
 const imagemin = require("gulp-imagemin");
+const webp = require('gulp-webp');
 const imageminMozJpeg = require("imagemin-mozjpeg");
 const imageminPngQuant = require("imagemin-pngquant");
 const imageminSvgo = require("imagemin-svgo");
@@ -32,9 +33,11 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
+const gulpIf = require('gulp-if');
+const isWebp = file => !/\.no-webp\.jpg$/i.test(file.path);
 function images() {
   return src("./dev/images/**/*")
-    .pipe(
+    .pipe(gulpIf(isWebp, 
       imagemin([
         imageminMozJpeg({
           quality: 80,
@@ -42,7 +45,8 @@ function images() {
         imageminPngQuant(),
         imageminSvgo({ plugins: [{ removeViewbox: false }] })
       ])
-    )
+    ))
+    .pipe(gulpIf(isWebp, webp({ quality: 50 }))) // png, jpg を webpに変換
     .pipe(dest("./images"));
 }
 
@@ -52,7 +56,7 @@ function php() {
 
 function serve() {
   browserSync.init({
-    proxy: "localhost:10079", // ローカル開発URLを入力してください
+    proxy: "localhost:10085", // ローカル開発URLを入力してください
   });
 
   watch("dev/scss/**/*.scss", styles);

@@ -8,24 +8,24 @@
             <div class="swiper-slide ">
               <div class="slide-img">
                 <picture>
-                  <source srcset="<?= get_template_directory_uri() ?>/images/top/main1-pc.jpg" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/main1-sp.jpg" alt="">
+                  <source srcset="<?= get_template_directory_uri() ?>/images/top/main1-pc.webp" media="(min-width: 768px)">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/main1-sp.webp" alt="">
                 </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <picture>
-                  <source srcset="<?= get_template_directory_uri() ?>/images/top/main2-pc.jpg" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/main2-sp.jpg" alt="">
+                  <source srcset="<?= get_template_directory_uri() ?>/images/top/main2-pc.webp" media="(min-width: 768px)">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/main2-sp.webp" alt="">
                 </picture>
               </div>
             </div>
             <div class="swiper-slide">
               <div class="slide-img">
                 <picture>
-                  <source srcset="<?= get_template_directory_uri() ?>/images/top/main3-pc.jpg" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/main3-sp.jpg" alt="">
+                  <source srcset="<?= get_template_directory_uri() ?>/images/top/main3-pc.webp" media="(min-width: 768px)">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/main3-sp.webp" alt="">
                 </picture>
               </div>
             </div>
@@ -81,8 +81,8 @@
           <div class="content__item">
             <a href="" class="content__item-link">
               <picture>
-                <source srcset="<?= get_template_directory_uri() ?>/images/top/content1-pc.jpg" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content1-sp.jpg" alt="">
+                <source srcset="<?= get_template_directory_uri() ?>/images/top/content1-pc.webp" media="(min-width: 768px)">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content1-sp.webp" alt="">
               </picture>
               <span class="content__item-text">経営理念ページへ</span>
             </a>
@@ -90,8 +90,8 @@
           <div class="content__item">
             <a href="" class="content__item-link">
               <picture>
-                <source srcset="<?= get_template_directory_uri() ?>/images/top/content2-pc.jpg" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content2-sp.jpg" alt="">
+                <source srcset="<?= get_template_directory_uri() ?>/images/top/content2-pc.webp" media="(min-width: 768px)">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content2-sp.webp" alt="">
               </picture>
               <span class="content__item-text">理念1へ</span>
             </a>
@@ -99,8 +99,8 @@
           <div class="content__item">
             <a href="" class="content__item-link">
               <picture>
-                <source srcset="<?= get_template_directory_uri() ?>/images/top/content3-pc.jpg" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content3-sp.jpg" alt="">
+                <source srcset="<?= get_template_directory_uri() ?>/images/top/content3-pc.webp" media="(min-width: 768px)">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content3-sp.webp" alt="">
               </picture>
               <span class="content__item-text">理念2へ</span>
             </a>
@@ -108,8 +108,8 @@
           <div class="content__item">
             <a href="" class="content__item-link">
               <picture>
-                <source srcset="<?= get_template_directory_uri() ?>/images/top/content4-pc.jpg" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content4-sp.jpg" alt="">
+                <source srcset="<?= get_template_directory_uri() ?>/images/top/content4-pc.webp" media="(min-width: 768px)">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content4-sp.webp" alt="">
               </picture>
               <span class="content__item-text">理念3へ</span>
             </a>
@@ -139,20 +139,20 @@
               
               <div class="swiper-slide works-slide">
                 <picture>
-                  <source srcset="<?= get_template_directory_uri() ?>/images/top/works1-pc.jpg" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/works1-sp.jpg" alt="">
+                  <source srcset="<?= get_template_directory_uri() ?>/images/top/works1-pc.webp" media="(min-width: 768px)">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/works1-sp.webp" alt="">
                 </picture>
               </div>
               <div class="swiper-slide works-slide">
                 <picture>
-                  <source srcset="<?= get_template_directory_uri() ?>/images/top/works2-pc.jpg" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/works2-sp.jpg" alt="">
+                  <source srcset="<?= get_template_directory_uri() ?>/images/top/works2-pc.webp" media="(min-width: 768px)">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/works2-sp.webp" alt="">
                 </picture>
               </div>
               <div class="swiper-slide works-slide">
                 <picture>
-                  <source srcset="<?= get_template_directory_uri() ?>/images/top/works3-pc.jpg" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/works3-sp.jpg" alt="">
+                  <source srcset="<?= get_template_directory_uri() ?>/images/top/works3-pc.webp" media="(min-width: 768px)">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/works3-sp.webp" alt="">
                 </picture>
               </div>
             </div>
@@ -192,8 +192,8 @@
       <div class="pc-inner  media-text__container media-text__container--left">
         <div class="media-text__image overview__image">
           <picture>
-            <source srcset="<?= get_template_directory_uri() ?>/images/top/overview1-pc.jpg" media="(min-width: 768px)">
-            <img src="<?= get_template_directory_uri() ?>/images/top/overview1-sp.jpg" alt="">
+            <source srcset="<?= get_template_directory_uri() ?>/images/top/overview1-pc.webp" media="(min-width: 768px)">
+            <img src="<?= get_template_directory_uri() ?>/images/top/overview1-sp.webp" alt="">
           </picture>
         </div>
         <div class="media-text__contents">
@@ -223,7 +223,7 @@
         <article class="card cards__card new-icon">
           <a href="" class="card__link">
             <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog1.jpg" alt="">
+              <img src="<?= get_template_directory_uri() ?>/images/top/blog1.webp" alt="">
             </div>
             <div class="card__contents">
               <dl class="card__contents-container">
@@ -240,7 +240,7 @@
         <article class="card cards__card">
           <a href="" class="card__link">
             <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog2.jpg" alt="">
+              <img src="<?= get_template_directory_uri() ?>/images/top/blog2.webp" alt="">
             </div>
             <div class="card__contents">
               <dl class="card__contents-container">
@@ -257,7 +257,7 @@
         <article class="card cards__card">
           <a href="" class="card__link">
             <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog3.jpg" alt="">
+              <img src="<?= get_template_directory_uri() ?>/images/top/blog3.webp" alt="">
             </div>
             <div class="card__contents">
               <dl class="card__contents-container">
