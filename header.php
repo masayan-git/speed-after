@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <!-- meta情報 -->
-  <title>speed-before</title>
+  <title>speed-after</title>
   <meta name="description" content="" />
   <meta name="keywords" content="なし" />
   <meta name="robots" content="noindex">
