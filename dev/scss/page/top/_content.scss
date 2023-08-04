@@ -47,9 +47,11 @@
   }
 
   &__item-link {
+    aspect-ratio: 1 /1;
 
-    
-
+    img {
+      height: 100%;
+    }
   }
 
   &__item-text {

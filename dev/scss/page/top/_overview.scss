@@ -10,8 +10,10 @@
   }
 
   &__image {
+    aspect-ratio: 16 / 9;
 
-    image {
+    img {
+      height: 100%;
       object-fit: cover;
     }
   }
