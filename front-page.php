@@ -82,7 +82,7 @@
             <a href="" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content1-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content1-sp.webp" width="376" height="336" alt="">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content1-sp.webp" loading="lazy" width="376" height="336" alt="">
               </picture>
               <span class="content__item-text">経営理念ページへ</span>
             </a>
@@ -91,7 +91,7 @@
             <a href="" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content2-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content2-sp.webp" width="376" height="336" alt="">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content2-sp.webp" loading="lazy" width="376" height="336" alt="">
               </picture>
               <span class="content__item-text">理念1へ</span>
             </a>
@@ -100,7 +100,7 @@
             <a href="" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content3-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content3-sp.webp" width="376" height="336" alt="">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content3-sp.webp" loading="lazy" width="376" height="336" alt="">
               </picture>
               <span class="content__item-text">理念2へ</span>
             </a>
@@ -109,7 +109,7 @@
             <a href="" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content4-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
-                <img src="<?= get_template_directory_uri() ?>/images/top/content4-sp.webp" width="376" height="336" alt="">
+                <img src="<?= get_template_directory_uri() ?>/images/top/content4-sp.webp" loading="lazy" width="376" height="336" alt="">
               </picture>
               <span class="content__item-text">理念3へ</span>
             </a>
@@ -140,19 +140,19 @@
               <div class="swiper-slide works-slide">
                 <picture>
                   <source srcset="<?= get_template_directory_uri() ?>/images/top/works1-pc.webp" width="750" height="552" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/works1-sp.webp" width="750" height="552" alt="" >
+                  <img src="<?= get_template_directory_uri() ?>/images/top/works1-sp.webp" loading="lazy" width="750" height="552" alt="" >
                 </picture>
               </div>
               <div class="swiper-slide works-slide">
                 <picture>
                   <source srcset="<?= get_template_directory_uri() ?>/images/top/works2-pc.webp" width="750" height="552" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/works2-sp.webp" width="750" height="552" alt="">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/works2-sp.webp" loading="lazy" width="750" height="552" alt="">
                 </picture>
               </div>
               <div class="swiper-slide works-slide">
                 <picture>
                   <source srcset="<?= get_template_directory_uri() ?>/images/top/works3-pc.webp" width="750" height="552" media="(min-width: 768px)">
-                  <img src="<?= get_template_directory_uri() ?>/images/top/works3-sp.webp" width="750" height="552" alt="">
+                  <img src="<?= get_template_directory_uri() ?>/images/top/works3-sp.webp" loading="lazy" width="750" height="552" alt="">
                 </picture>
               </div>
             </div>
@@ -193,7 +193,7 @@
         <div class="media-text__image overview__image">
           <picture>
             <source srcset="<?= get_template_directory_uri() ?>/images/top/overview1-pc.webp" width="1114" height="522" media="(min-width: 768px)">
-            <img src="<?= get_template_directory_uri() ?>/images/top/overview1-sp.webp" width="750" height="522" alt="">
+            <img src="<?= get_template_directory_uri() ?>/images/top/overview1-sp.webp" loading="lazy" width="750" height="522" alt="">
           </picture>
         </div>
         <div class="media-text__contents">
@@ -223,7 +223,7 @@
         <article class="card cards__card new-icon">
           <a href="" class="card__link">
             <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog1.webp" width="770" height="466" alt="">
+              <img src="<?= get_template_directory_uri() ?>/images/top/blog1.webp" loading="lazy" width="770" height="466" alt="">
             </div>
             <div class="card__contents">
               <dl class="card__contents-container">
@@ -240,7 +240,7 @@
         <article class="card cards__card">
           <a href="" class="card__link">
             <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog2.webp" width="770" height="466" alt="">
+              <img src="<?= get_template_directory_uri() ?>/images/top/blog2.webp" loading="lazy" width="770" height="466" alt="">
             </div>
             <div class="card__contents">
               <dl class="card__contents-container">
@@ -257,7 +257,7 @@
         <article class="card cards__card">
           <a href="" class="card__link">
             <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog3.webp" width="770" height="466" alt="">
+              <img src="<?= get_template_directory_uri() ?>/images/top/blog3.webp" loading="lazy" width="770" height="466" alt="">
             </div>
             <div class="card__contents">
               <dl class="card__contents-container">
