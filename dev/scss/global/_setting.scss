@@ -17,6 +17,34 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url('../font/NotoSerifJP-Regular.otf') format('otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../font/NotoSansJP-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../font/NotoSansJP-Medium.ttf') format('ttf');
+  font-weight: 500;
+  font-style: medium;
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url('../font/NotoSansJP-Regular.ttf') format('ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
 $base-font-family: 'Noto Sans JP', sans-serif;
 $section-title-font-family: 'Noto Serif JP', serif;
 $second-font-family: "";
