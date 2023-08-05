@@ -35,7 +35,7 @@
         <li class="header__item"><a href="" class="header__link header__link--contact">お問い合わせ</a></li>
       </ul>
     </nav>
-    <button type="button" class="drawer-hamburger" id="js-hamburger">
+    <button type="button" class="drawer-hamburger" aria-label="menu button" id="js-hamburger">
       <span class="drawer-hamburger__line"></span>
       <span class="drawer-hamburger__line"></span>
       <span class="drawer-hamburger__line"></span>
