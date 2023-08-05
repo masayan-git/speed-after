@@ -18,7 +18,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Serif JP";
-  src: url("../font/NotoSerifJP-Regular.otf") format("otf");
+  src: url("../font/NotoSerifJP-Regular.otf") format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../font/NotoSansJP-Bold.ttf") format("ttf");
+  src: url("../font/NotoSansJP-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -34,7 +34,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../font/NotoSansJP-Medium.ttf") format("ttf");
+  src: url("../font/NotoSansJP-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -42,7 +42,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../font/NotoSansJP-Regular.ttf") format("ttf");
+  src: url("../font/NotoSansJP-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
