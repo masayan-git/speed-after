@@ -12,54 +12,61 @@ $padding-pc: 25px;
 $padding-sp: 20px;
 // ※PC時：デザインカンプの余白の幅ではない。PC時は通常25pxで大丈夫！
 
-
 ////////////////////
 // フォント設定
 ////////////////////
 
 @font-face {
-  font-family: 'Noto Serif JP';
-  src: url('../font/NotoSerifJP-Regular.otf') format('otf');
+  font-family: "Noto Serif JP";
+  src: url("../font/NotoSerifJP-Regular.woff2") format("woff2"),
+    url("../font/NotoSerifJP-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../font/NotoSansJP-Medium.ttf') format('ttf');
+  font-family: "Noto Sans JP";
+  src: url("../font/NotoSansJP-Bold.woff2") format("woff2"),
+    url("../font/NotoSansJP-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  src: url("../font/NotoSansJP-Medium.woff2") format("woff2"),
+    url("../font/NotoSansJP-Medium.woff") format("woff");
   font-weight: 500;
-  font-style: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../font/NotoSansJP-Medium.ttf') format('ttf');
-  font-weight: 500;
-  font-style: medium;
-}
-
-@font-face {
-  font-family: 'Noto Sans JP';
-  src: url('../font/NotoSansJP-Regular.ttf') format('ttf');
+  font-family: "Noto Sans JP";
+  src: url("../font/NotoSansJP-Regular.woff2") format("woff2"),
+    url("../font/NotoSansJP-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
-$base-font-family: 'Noto Sans JP', sans-serif;
-$section-title-font-family: 'Noto Serif JP', serif;
+$base-font-family: "Noto Sans JP", sans-serif;
+$section-title-font-family: "Noto Serif JP", serif;
 $second-font-family: "";
 
 @font-face {
-  font-family: 'MyFont';
-  src: url('../font/PlaylistScript.otf') format('opentype');
+  font-family: "MyFont";
+  src: url("../font/PlaylistScript.woff2") format("woff2"),
+  url("../font/PlaylistScript.woff") format("woff");
   font-display: swap;
 }
-$title-font-family: 'MyFont', sans-serif;
+$title-font-family: "MyFont", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
   font-family: $base-font-family;
-  
 }
 
 main {
@@ -79,12 +86,12 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
-$section-title-color: #F9F871;
+$section-title-color: #f9f871;
 $button-color: #333333;
 $content-color: #333333;
 $text-color-black: #333333;
-$category-color: #FFEA2E;
-$new-icon-color: #FFBA6A;
+$category-color: #ffea2e;
+$new-icon-color: #ffba6a;
 
 ////////////////////
 // メディアクエリとブレークポイントの設定
@@ -97,7 +104,6 @@ $breakpoints: (
   lg: 1024,
   xl: 1440,
 );
-
 
 //メディアクエリー
 $mediaquerys: (
@@ -120,7 +126,6 @@ $mediaquerys: (
   @return math.div($pixels, 16) * 1rem;
 }
 
-
 ////////////////////
 // 非表示設定
 ////////////////////
@@ -132,9 +137,6 @@ $mediaquerys: (
     display: block;
   }
 }
-
-
-
 
 //モバイルのみ表示
 .is-sp {
