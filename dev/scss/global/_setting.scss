@@ -18,7 +18,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Serif JP";
-  src: url("../font/NotoSerifJP-Regular.woff2") format("woff2"),
+  src: url("../font/NotoSerifJP-Regular.woff") format("woff"),
     url("../font/NotoSerifJP-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -27,7 +27,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../font/NotoSansJP-Bold.woff2") format("woff2"),
+  src: url("../font/NotoSansJP-Bold.woff") format("woff"),
     url("../font/NotoSansJP-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -36,7 +36,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../font/NotoSansJP-Medium.woff2") format("woff2"),
+  src: url("../font/NotoSansJP-Medium.woff") format("woff"),
     url("../font/NotoSansJP-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -45,7 +45,7 @@ $padding-sp: 20px;
 
 @font-face {
   font-family: "Noto Sans JP";
-  src: url("../font/NotoSansJP-Regular.woff2") format("woff2"),
+  src: url("../font/NotoSansJP-Regular.woff") format("woff"),
     url("../font/NotoSansJP-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -58,7 +58,7 @@ $second-font-family: "";
 
 @font-face {
   font-family: "MyFont";
-  src: url("../font/PlaylistScript.woff2") format("woff2"),
+  src: url("../font/PlaylistScript.woff") format("woff"),
   url("../font/PlaylistScript.woff") format("woff");
   font-display: swap;
 }
