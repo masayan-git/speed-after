@@ -8,7 +8,7 @@
   <title>speed-after</title>
   <meta name="description" content="スピードテストです。" />
   <meta name="keywords" content="なし" />
-  <meta name="robots" content="noindex">
+  <!-- <meta name="robots" content="noindex"> -->
 
   <!-- css -->
   <!-- <link media="print" onload="this.media='all'" rel="preconnect" href="https://fonts.googleapis.com">
