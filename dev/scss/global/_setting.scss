@@ -48,8 +48,10 @@ $padding-sp: 20px;
 //   font-display: swap;
 // }
 
-$base-font-family: "Noto Sans JP", sans-serif;
-$section-title-font-family: "Noto Serif JP", serif;
+// $base-font-family: "Noto Sans JP", sans-serif;
+$base-font-family: "ヒラギノ角ゴ ProN", "ヒラギノ角ゴシック", Yu Gothic, Meiryo, Roboto, sans-serif;;
+// $section-title-font-family: "Noto Serif JP", serif;
+$section-title-font-family: "ヒラギノ明朝 ProN", "MS 明朝", "MS PMincho", serif;
 $second-font-family: "";
 
 @font-face {
