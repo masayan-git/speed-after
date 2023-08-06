@@ -51,11 +51,11 @@
           </div>
         </div>
         <div class="top-news__title-container">
-          <p class="top-news__title"><a href="" class="top-news__title-link">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a></p>
+          <p class="top-news__title"><a href="<?= home_url(); ?>" class="top-news__title-link">記事タイトルが入ります。記事タイトルが入ります。記事タイトルが入ります。</a></p>
         </div>
       </div>
       <div class="top-news__button-container">
-        <a href="" class="top-news__button">すべて見る</a>
+        <a href="<?= home_url(); ?>" class="top-news__button">すべて見る</a>
       </div>
     </div>
   </section>
@@ -79,7 +79,7 @@
       <div class="content__items">
         <div class="content__items-container">
           <div class="content__item">
-            <a href="" class="content__item-link">
+            <a href="<?= home_url(); ?>" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content1-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
                 <img src="<?= get_template_directory_uri() ?>/images/top/content1-sp.webp" loading="lazy" width="376" height="336" alt="">
@@ -88,7 +88,7 @@
             </a>
           </div>
           <div class="content__item">
-            <a href="" class="content__item-link">
+            <a href="<?= home_url(); ?>" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content2-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
                 <img src="<?= get_template_directory_uri() ?>/images/top/content2-sp.webp" loading="lazy" width="376" height="336" alt="">
@@ -97,7 +97,7 @@
             </a>
           </div>
           <div class="content__item">
-            <a href="" class="content__item-link">
+            <a href="<?= home_url(); ?>" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content3-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
                 <img src="<?= get_template_directory_uri() ?>/images/top/content3-sp.webp" loading="lazy" width="376" height="336" alt="">
@@ -106,7 +106,7 @@
             </a>
           </div>
           <div class="content__item">
-            <a href="" class="content__item-link">
+            <a href="<?= home_url(); ?>" class="content__item-link">
               <picture>
                 <source srcset="<?= get_template_directory_uri() ?>/images/top/content4-pc.webp" width="2560" height="1700" media="(min-width: 768px)">
                 <img src="<?= get_template_directory_uri() ?>/images/top/content4-sp.webp" loading="lazy" width="376" height="336" alt="">
@@ -169,7 +169,7 @@
             </div>
 
             <div class="media-text__button works__button">
-              <a href="" class="button">詳しく見る</a>
+              <a href="<?= home_url(); ?>" class="button">詳しく見る</a>
             </div>
           </div>
         </div>
@@ -205,7 +205,7 @@
               <p class="media-text__text">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
             </div>
             <div class="media-text__button">
-              <a href="" class="button">詳しく見る</a>
+              <a href="<?= home_url(); ?>" class="button">詳しく見る</a>
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@
     <div class="inner blog__container">
       <div class="cards blog__cards">
         <article class="card cards__card new-icon">
-          <a href="" class="card__link">
+          <a href="<?= home_url(); ?>" class="card__link">
             <div class="card__image">
               <img src="<?= get_template_directory_uri() ?>/images/top/blog1.webp" loading="lazy" width="770" height="466" alt="">
             </div>
@@ -238,7 +238,7 @@
           </a>
         </article>
         <article class="card cards__card">
-          <a href="" class="card__link">
+          <a href="<?= home_url(); ?>" class="card__link">
             <div class="card__image">
               <img src="<?= get_template_directory_uri() ?>/images/top/blog2.webp" loading="lazy" width="770" height="466" alt="">
             </div>
@@ -255,7 +255,7 @@
           </a>
         </article>
         <article class="card cards__card">
-          <a href="" class="card__link">
+          <a href="<?= home_url(); ?>" class="card__link">
             <div class="card__image">
               <img src="<?= get_template_directory_uri() ?>/images/top/blog3.webp" loading="lazy" width="770" height="466" alt="">
             </div>
@@ -273,7 +273,7 @@
         </article>
       </div>
       <div class="blog__button">
-        <a href="" class="button">詳しく見る</a>
+        <a href="<?= home_url(); ?>" class="button">詳しく見る</a>
       </div>
     </div>
   </section>
@@ -289,7 +289,7 @@
       </div>
 
       <div class="contact__button">
-        <a href="" class="button button--contact">お問い合わせへ</a>
+        <a href="<?= home_url(); ?>" class="button button--contact">お問い合わせへ</a>
       </div>
     </div>
   </section>
