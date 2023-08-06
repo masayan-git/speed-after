@@ -26,7 +26,7 @@
     
     <nav class="header__nav" id="js-header">
       <ul class="header__list drawer-header__list">
-        <li class="header__item header__item--is-active"><a href="" class="header__link">トップ</a></li>
+        <li class="header__item header__item--is-active"><a href="<?= home_url(); ?>" class="header__link">トップ</a></li>
         <li class="header__item"><a href="<?= home_url(); ?>" class="header__link">お知らせ</a></li>
         <li class="header__item"><a href="<?= home_url(); ?>" class="header__link">事業内容</a></li>
         <li class="header__item"><a href="<?= home_url(); ?>" class="header__link">制作実績</a></li>
