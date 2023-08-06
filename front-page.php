@@ -220,57 +220,44 @@
     </h2>
     <div class="inner blog__container">
       <div class="cards blog__cards">
-        <article class="card cards__card new-icon">
-          <a href="<?= home_url(); ?>" class="card__link">
-            <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog1.webp" loading="lazy" width="770" height="466" alt="">
-            </div>
-            <div class="card__contents">
-              <dl class="card__contents-container">
-                <dt class="card__title">タイトルが入ります。タイトルが入ります。</dt>
-                <dd class="card__description">説明文が入ります。説明文が入ります。説明文が入ります。</dd>
-              </dl>
-              <div class="card__info">
-                <span class="card__category">カテゴリ</span>
-                <time class="card__time" datetime="2021-07-20">2021.07.20</time>
+        <?php
+          // WP_Queryの引数を設定
+          $args = array(
+              'post_type' => 'post',   // 投稿タイプは通常の投稿
+              'posts_per_page' => 3,  // 3件の投稿を表示
+            );
+            $the_query = new WP_Query( $args );
+        ?>
+        <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          <article class="card cards__card new-icon">
+            <a href="<?php the_permalink(); ?>" class="card__link">
+              <div class="card__image">
+                <?php if ( has_post_thumbnail() ) : ?>
+                  <?php the_post_thumbnail( 'full', array( 'loading' => 'lazy', 'width' => '770', 'height' => '466', 'alt' => get_the_title() ) ); ?>
+                <?php else : ?>
+                  <img src="<?= get_template_directory_uri() ?>/images/top/blog2.webp" loading="lazy" width="770" height="466" alt="">
+                <?php endif; ?>
               </div>
-            </div>
-          </a>
-        </article>
-        <article class="card cards__card">
-          <a href="<?= home_url(); ?>" class="card__link">
-            <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog2.webp" loading="lazy" width="770" height="466" alt="">
-            </div>
-            <div class="card__contents">
-              <dl class="card__contents-container">
-                <dt class="card__title">タイトルが入ります。タイトルが入ります。</dt>
-                <dd class="card__description">説明文が入ります。説明文が入ります。説明文が入ります。</dd>
-              </dl>
-              <div class="card__info">
-                <span class="card__category">カテゴリ</span>
-                <time class="card__time" datetime="2021-07-20">2021.07.20</time>
+              <div class="card__contents">
+                <dl class="card__contents-container">
+                  <dt class="card__title"><?php the_title(); ?></dt>
+                  <dd class="card__description"><?php the_excerpt(); ?></dd>
+                </dl>
+                <div class="card__info">
+                  <span class="card__category">
+                    <?php
+                      $category = get_the_category(); 
+                      if($category) {
+                        echo esc_html($category[0]->name);
+                      }
+                    ?>
+                  </span>
+                  <time class="card__time" datetime="<?php echo get_the_date('Y.m.d'); ?>"><?php echo get_the_date('Y.m.d'); ?></time>
+                </div>
               </div>
-            </div>
-          </a>
-        </article>
-        <article class="card cards__card">
-          <a href="<?= home_url(); ?>" class="card__link">
-            <div class="card__image">
-              <img src="<?= get_template_directory_uri() ?>/images/top/blog3.webp" loading="lazy" width="770" height="466" alt="">
-            </div>
-            <div class="card__contents">
-              <dl class="card__contents-container">
-                <dt class="card__title">タイトルが入ります。タイトルが入ります。</dt>
-                <dd class="card__description">説明文が入ります。説明文が入ります。説明文が入ります。</dd>
-              </dl>
-              <div class="card__info">
-                <span class="card__category">カテゴリ</span>
-                <time class="card__time" datetime="2021-07-20">2021.07.20</time>
-              </div>
-            </div>
-          </a>
-        </article>
+            </a>
+          </article>
+        <?php endwhile; wp_reset_postdata(); endif; ?>
       </div>
       <div class="blog__button">
         <a href="<?= home_url(); ?>" class="button">詳しく見る</a>
