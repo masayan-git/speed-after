@@ -16,43 +16,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-// @font-face {
-//   font-family: "Noto Serif JP";
-//   src: url("../font/NotoSerifJP-Regular.woff2") format("woff2");
-//   font-weight: 400;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Noto Sans JP";
-//   src: url("../font/NotoSansJP-Bold.woff2") format("woff2");
-//   font-weight: 700;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Noto Sans JP";
-//   src: url("../font/NotoSansJP-Medium.woff2") format("woff2");
-//   font-weight: 500;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// @font-face {
-//   font-family: "Noto Sans JP";
-//   src: url("../font/NotoSansJP-Regular.woff2") format("woff2");
-//   font-weight: 400;
-//   font-style: normal;
-//   font-display: swap;
-// }
-
-// $base-font-family: "Noto Sans JP", sans-serif;
 $base-font-family: "ヒラギノ角ゴ ProN", "ヒラギノ角ゴシック", Yu Gothic, Meiryo, Roboto, sans-serif;;
-// $section-title-font-family: "Noto Serif JP", serif;
 $section-title-font-family: "ヒラギノ明朝 ProN", "MS 明朝", "MS PMincho", serif;
-$second-font-family: "";
 
 @font-face {
   font-family: "MyFont";
@@ -60,7 +25,6 @@ $second-font-family: "";
   font-display: swap;
 }
 $title-font-family: "MyFont", sans-serif;
-// ※検証ツールでしっかり反映されているか確認する
 
 body {
   font-family: $base-font-family;
